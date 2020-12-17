@@ -9,9 +9,12 @@ repositories:
   url: http://chartmuseum-jx.34.121.209.58.nip.io/
 releases:
 - chart: dev/footest
-  version: 0.0.1
+  version: 0.0.2
   name: footest
   values:
   - jx-values.yaml
+  forceNamespace: ""
+  skipDeps: null
 templates: {}
+missingFileHandler: ""
 renderedvalues: {}
