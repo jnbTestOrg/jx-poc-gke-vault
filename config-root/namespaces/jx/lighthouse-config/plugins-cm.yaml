@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jnbTestOrg/barproject
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jnbTestOrg/footest
       require_self_approval: true
     cat: {}
@@ -24,6 +28,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      jnbTestOrg/barproject:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jnbTestOrg/footest:
       - approve
       - assign
@@ -68,6 +88,9 @@ data:
     triggers:
     - repos:
       - jnbTestOrg/jx-poc-gke-vault
+      trusted_org: todo
+    - repos:
+      - jnbTestOrg/barproject
       trusted_org: todo
     - repos:
       - jnbTestOrg/footest

@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jnbTestOrg
+    provider: github
+    repository: barproject
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jnbtestorg-barproject
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jnbTestOrg/barproject.git
+  org: jnbTestOrg
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: barproject
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jnbTestOrg/barproject
