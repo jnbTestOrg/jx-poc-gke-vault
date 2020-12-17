@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - jnbTestOrg/jx-poc-gke-vault
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.34.121.209.58.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
