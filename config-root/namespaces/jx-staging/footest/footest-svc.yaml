@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: footest
   labels:
-    chart: "footest-0.0.1"
+    chart: "footest-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"

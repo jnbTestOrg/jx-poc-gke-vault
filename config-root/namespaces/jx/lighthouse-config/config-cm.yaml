@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jnbTestOrg/barproject: true
         jnbTestOrg/footest: true
         jnbTestOrg/jx-poc-gke-vault: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        jnbTestOrg/barproject: merge
         jnbTestOrg/footest: merge
         jnbTestOrg/jx-poc-gke-vault: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - jnbTestOrg/jx-poc-gke-vault
+        - jnbTestOrg/barproject
         - jnbTestOrg/footest
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - jnbTestOrg/jx-poc-gke-vault
+        - jnbTestOrg/barproject
         - jnbTestOrg/footest
       target_url: http://dashboard-jx.34.121.209.58.nip.io
 kind: ConfigMap
