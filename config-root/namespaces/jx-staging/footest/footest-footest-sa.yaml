@@ -1,0 +1,8 @@
+# Source: footest/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: footest-footest
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
