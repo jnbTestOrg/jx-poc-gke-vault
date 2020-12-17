@@ -1,0 +1,17 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.34.121.209.58.nip.io/
+releases:
+- chart: dev/footest
+  version: 0.0.1
+  name: footest
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}

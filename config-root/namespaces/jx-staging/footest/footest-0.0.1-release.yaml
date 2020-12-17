@@ -1,0 +1,49 @@
+# Source: footest/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-17T17:47:12Z"
+  deletionTimestamp: null
+  name: 'footest-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: 4c28651fc5ea1d372f7e2d3de924c1db9c3497d5
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 79717157aa4733f4f3786e894b1ed7b407e745a6
+    - author:
+        email: jonasb@unity3d.com
+        name: Jonas Bellow
+      branch: master
+      committer:
+        email: jonasb@unity3d.com
+        name: Jonas Bellow
+      message: |
+        chore: Jenkins X build pack
+      sha: 97caee1785f177b5198d7d7b9522578da25a96c0
+  gitHttpUrl: https://github.com/jnbTestOrg/footest
+  gitOwner: jnbTestOrg
+  gitRepository: footest
+  name: 'footest'
+  releaseNotesURL: https://github.com/jnbTestOrg/footest/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
