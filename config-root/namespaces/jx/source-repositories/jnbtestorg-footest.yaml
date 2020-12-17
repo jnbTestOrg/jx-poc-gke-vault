@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jnbTestOrg
+    provider: github
+    repository: footest
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jnbtestorg-footest
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jnbTestOrg/footest.git
+  org: jnbTestOrg
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: footest
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jnbTestOrg/footest
