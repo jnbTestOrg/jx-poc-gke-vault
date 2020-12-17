@@ -1,0 +1,14 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.34.121.209.58.nip.io/
+releases:
+- chart: dev/footest
+  version: 0.0.1
+  name: footest
+  forceNamespace: ""
+  skipDeps: null
+templates: {}
+missingFileHandler: ""
+renderedvalues: {}
